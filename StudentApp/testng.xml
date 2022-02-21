@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Emre Test">
+        <groups>
+            <run>
+                <include name="SmokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.student.tests.CrudTest">
+                <methods>
+                    <include name="getAllStudent"/>
+                    <include name="createNewStudent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
